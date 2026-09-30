@@ -1,0 +1,3 @@
+faster-whisper
+llama-cpp-python
+onnxruntime
