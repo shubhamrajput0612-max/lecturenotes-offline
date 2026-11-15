@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "offline-lecture-notes"
+version = "0.1.0"
+description = "Offline Gujarati/Hindi lecture notes: Whisper transcription + on-device LLM summary and flashcards"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = ["faster-whisper>=1.0.0", "llama-cpp-python>=0.2.90"]
+
+[project.scripts]
+lecture-notes = "lecture_notes.cli:main"
+
+[tool.setuptools]
+packages = ["lecture_notes"]
